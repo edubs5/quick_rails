@@ -187,3 +187,50 @@ Migrating to CreateTeams (20140808233250)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140808233250"]]
   [1m[36m (100.2ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mPlayer Load (3.7ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[36mPlayer Load (21.2ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36mTeam Load (2.4ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."team_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: players.team_id: SELECT "players".* FROM "players"  WHERE "players"."team_id" = ?
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "teams" ("city", "created_at", "id", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "hous"], ["created_at", "2014-08-09 05:45:38.579049"], ["id", 1], ["state", "TX"], ["team_name", "rocks"], ["updated_at", "2014-08-09 05:45:38.579049"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("created_at", "first_name", "id", "last_name", "position", "stats", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-09 05:45:59.992272"], ["first_name", "hi"], ["id", 1], ["last_name", "yo"], ["position", "PF"], ["stats", "324"], ["updated_at", "2014-08-09 05:45:59.992272"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPlayer Load (0.9ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."team_id" = ?[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: players.team_id: SELECT "players".* FROM "players"  WHERE "players"."team_id" = ?
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."team_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: players.team_id: SELECT "players".* FROM "players"  WHERE "players"."team_id" = ?
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Associations (20140809145251)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (12.0ms)[0m  [1mALTER TABLE "players" ADD "team_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140809145251"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mTeam Load (3.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeam Load (0.4ms)[0m  SELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."team_id" = ?[0m  [["team_id", 1]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "players" SET "team_id" = ?, "updated_at" = ? WHERE "players"."id" = 1[0m  [["team_id", 1], ["updated_at", "2014-08-09 15:16:13.234393"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (13.2ms)[0m  INSERT INTO "players" ("created_at", "first_name", "last_name", "position", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-08-09 15:28:31.598856"], ["first_name", "jon"], ["last_name", "targaryan"], ["position", "lord commander"], ["stats", "lvl 15"], ["team_id", 1], ["updated_at", "2014-08-09 15:28:31.598856"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
