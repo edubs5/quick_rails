@@ -13,3 +13,6 @@ rake db:seed
 
 Then start server:
 rails s
+
+In your browser, go to the following url to view app:
+localhost:3000
