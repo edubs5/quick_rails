@@ -1,4 +1,4 @@
-Putting the angularJS website in rails 4 app with backend
+Putting the angularJS website in rails 4.1.2 app with backend
 https://github.com/elmerwu/angularjs
 
 To run on your computer, clone files into directory.  Type commands should be run in command
