@@ -234,3 +234,356 @@ Migrating to Associations (20140809145251)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
   [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mTeam Load (4.0ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.6ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mTeam Load (1.6ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "test city"], ["created_at", "2014-08-09 16:38:28.981772"], ["state", "51"], ["team_name", "test"], ["updated_at", "2014-08-09 16:38:28.981772"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mTeam Load (2.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 16:40:13.720130"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 16:40:13.720130"]]
+  [1m[35m (57.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "New Orleans"], ["created_at", "2014-08-09 16:40:13.782195"], ["state", "LA"], ["team_name", "New Orleans Pelicans"], ["updated_at", "2014-08-09 16:40:13.782195"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Indianapolis"], ["created_at", "2014-08-09 16:40:13.788239"], ["state", "IN"], ["team_name", "Indiana Pacers"], ["updated_at", "2014-08-09 16:40:13.788239"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Philadelphia"], ["created_at", "2014-08-09 16:40:13.794110"], ["state", "PA"], ["team_name", "Philadelphia 76ers"], ["updated_at", "2014-08-09 16:40:13.794110"]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Indianapolis"], ["created_at", "2014-08-09 16:40:13.800444"], ["state", "IN"], ["team_name", "Indiana Pacers"], ["updated_at", "2014-08-09 16:40:13.800444"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Detroit"], ["created_at", "2014-08-09 16:40:13.806853"], ["state", "MI"], ["team_name", "Detroit Pistons"], ["updated_at", "2014-08-09 16:40:13.806853"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Detroit"], ["created_at", "2014-08-09 16:40:13.811621"], ["state", "MI"], ["team_name", "Detroit Pistons"], ["updated_at", "2014-08-09 16:40:13.811621"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Phoenix"], ["created_at", "2014-08-09 16:40:13.817118"], ["state", "AZ"], ["team_name", "Phoenix Suns"], ["updated_at", "2014-08-09 16:40:13.817118"]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Boston"], ["created_at", "2014-08-09 16:40:13.823083"], ["state", "MA"], ["team_name", "Boston Celtics"], ["updated_at", "2014-08-09 16:40:13.823083"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Minneapolis"], ["created_at", "2014-08-09 16:40:13.829347"], ["state", "MN"], ["team_name", "Minnesota Timberwolves (pre-trade!)"], ["updated_at", "2014-08-09 16:40:13.829347"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[36mTeam Load (1.5ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.4ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."id" = 12
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveFirstLastNameFromPlayer (20140809171515)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TEMPORARY TABLE "aplayers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "players"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aplayers" ("id","first_name","last_name","position","stats","created_at","updated_at","team_id") VALUES (1, 'hi', 'yo', 'PF', '324', '2014-08-09 05:45:59.992272', '2014-08-09 15:16:13.234393', 1)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aplayers" ("id","first_name","last_name","position","stats","created_at","updated_at","team_id") VALUES (2, 'jon', 'targaryan', 'lord commander', 'lvl 15', '2014-08-09 15:28:31.598856', '2014-08-09 15:28:31.598856', 1)
+  [1m[36m (15.9ms)[0m  [1mDROP TABLE "players"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar(255), "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aplayers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "players" ("id","last_name","position","stats","created_at","updated_at","team_id") VALUES (1, 'yo', 'PF', '324', '2014-08-09 05:45:59.992272', '2014-08-09 15:16:13.234393', 1)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "players" ("id","last_name","position","stats","created_at","updated_at","team_id") VALUES (2, 'targaryan', 'lord commander', 'lvl 15', '2014-08-09 15:28:31.598856', '2014-08-09 15:28:31.598856', 1)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "aplayers"
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aplayers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar(255), "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "players"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aplayers" ("id","last_name","position","stats","created_at","updated_at","team_id") VALUES (1, 'yo', 'PF', '324', '2014-08-09 05:45:59.992272', '2014-08-09 15:16:13.234393', 1)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aplayers" ("id","last_name","position","stats","created_at","updated_at","team_id") VALUES (2, 'targaryan', 'lord commander', 'lvl 15', '2014-08-09 15:28:31.598856', '2014-08-09 15:28:31.598856', 1)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "players"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aplayers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "players" ("id","position","stats","created_at","updated_at","team_id") VALUES (1, 'PF', '324', '2014-08-09 05:45:59.992272', '2014-08-09 15:16:13.234393', 1)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "players" ("id","position","stats","created_at","updated_at","team_id") VALUES (2, 'lord commander', 'lvl 15', '2014-08-09 15:28:31.598856', '2014-08-09 15:28:31.598856', 1)[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "aplayers"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140809171515"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+Migrating to AddAgeImageNameRankToPlayers (20140809171825)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "players" ADD "age" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "players" ADD "name" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "image" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "players" ADD "rank" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140809171825"]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:23:44.659011"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:23:44.659011"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[36mTeam Load (1.7ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans'[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans'
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans'[0m
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer, "age" integer, "name" varchar(255), "image" varchar(255), "rank" integer) [0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team_name" varchar(255), "city" varchar(255), "state" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (4.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171825')[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140808222534')
+  [1m[36m (3.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140808233250')[0m
+  [1m[35m (3.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140809145251')
+  [1m[36m (3.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171515')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:36:42.517894"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:36:42.517894"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams"  WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[36m (52.9ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer, "age" integer, "name" varchar(255), "image" varchar(255), "rank" integer) [0m
+  [1m[35m (3.5ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team_name" varchar(255), "city" varchar(255), "state" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171825')[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140808222534')
+  [1m[36m (3.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140808233250')[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140809145251')
+  [1m[36m (4.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171515')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:37:18.711312"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:37:18.711312"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (50.5ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer, "age" integer, "name" varchar(255), "image" varchar(255), "rank" integer) [0m
+  [1m[35m (2.9ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team_name" varchar(255), "city" varchar(255), "state" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171825')[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140808222534')
+  [1m[36m (4.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140808233250')[0m
+  [1m[35m (4.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140809145251')
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171515')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:37:46.833080"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:37:46.833080"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 27], ["created_at", "2014-08-09 17:37:46.849627"], ["image", "ersan"], ["name", "Ersan Ilyasova"], ["position", "SF/PF"], ["rank", 10], ["stats", "11.2 points, 6.2 rebounds, 1.3 assists, 0.8 steals, 0.1 blocks, 13.8 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:46.849627"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "New Orleans"], ["created_at", "2014-08-09 17:37:46.853818"], ["state", "LA"], ["team_name", "New Orleans Pelicans"], ["updated_at", "2014-08-09 17:37:46.853818"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 25], ["created_at", "2014-08-09 17:37:46.860374"], ["image", "eric"], ["name", "Eric Gordon"], ["position", "SG"], ["rank", 9], ["stats", "15.4 points, 2.6 rebounds, 3.3 assists, 1.2 steals, 0.2 blocks, 14.9 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:46.860374"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Indianapolis"], ["created_at", "2014-08-09 17:37:46.864474"], ["state", "IN"], ["team_name", "Indiana Pacers"], ["updated_at", "2014-08-09 17:37:46.864474"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 33], ["created_at", "2014-08-09 17:37:46.870803"], ["image", "david"], ["name", "David West"], ["position", "PF"], ["rank", 8], ["stats", "14.0 points, 6.8 rebounds, 2.8 assists, 0.8 steals, 0.9 blocks, 17.5 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:46.870803"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Philadelphia 76ers' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Philadelphia"], ["created_at", "2014-08-09 17:37:46.875827"], ["state", "PA"], ["team_name", "Philadelphia 76ers"], ["updated_at", "2014-08-09 17:37:46.875827"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 26], ["created_at", "2014-08-09 17:37:46.882184"], ["image", "thaddeus"], ["name", "Thaddeus Young"], ["position", "SF/PF"], ["rank", 7], ["stats", "17.9 points, 6.0 rebounds, 2.3 assists, 2.1 steals, 0.5 blocks, 16.6 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:46.882184"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 27], ["created_at", "2014-08-09 17:37:46.992628"], ["image", "roy"], ["name", "Roy Hibbert"], ["position", "C"], ["rank", 6], ["stats", "10.8 points, 6.6 rebounds, 1.1 assists, 0.4 steals, 2.2 blocks, 13.5 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:46.992628"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Detroit"], ["created_at", "2014-08-09 17:37:46.997621"], ["state", "MI"], ["team_name", "Detroit Pistons"], ["updated_at", "2014-08-09 17:37:46.997621"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 28], ["created_at", "2014-08-09 17:37:47.002499"], ["image", "josh"], ["name", "Josh Smith"], ["position", "PF"], ["rank", 5], ["stats", "16.4 points, 6.8 rebounds, 3.3 assists, 1.4 steals, 1.4 blocks, 14.1 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:47.002499"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 24], ["created_at", "2014-08-09 17:37:47.008060"], ["image", "greg"], ["name", "Greg Monroe"], ["position", "PF/C"], ["rank", 4], ["stats", "15.2 points, 9.3 rebounds, 2.1 assists, 1.1 steals, 0.6 blocks, 18.1 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:47.008060"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Phoenix Suns' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Phoenix"], ["created_at", "2014-08-09 17:37:47.012110"], ["state", "AZ"], ["team_name", "Phoenix Suns"], ["updated_at", "2014-08-09 17:37:47.012110"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 24], ["created_at", "2014-08-09 17:37:47.017390"], ["image", "ericb"], ["name", "Eric Bledsoe"], ["position", "PG"], ["rank", 3], ["stats", "17.7 points, 4.7 rebounds, 5.5 assists, 1.6 steals, 0.3 blocks, 19.6 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:47.017390"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Boston Celtics' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Boston"], ["created_at", "2014-08-09 17:37:47.021560"], ["state", "MA"], ["team_name", "Boston Celtics"], ["updated_at", "2014-08-09 17:37:47.021560"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 28], ["created_at", "2014-08-09 17:37:47.026757"], ["image", "rajon"], ["name", "Rajon Rondo"], ["position", "PG"], ["rank", 2], ["stats", "11.7 points, 5.5 rebounds, 9.8 assists,  1.3 steals, 0.1 blocks, 15.3 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:47.026757"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Minnesota Timberwolves (pre-trade!)' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Minneapolis"], ["created_at", "2014-08-09 17:37:47.031001"], ["state", "MN"], ["team_name", "Minnesota Timberwolves (pre-trade!)"], ["updated_at", "2014-08-09 17:37:47.031001"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 25], ["created_at", "2014-08-09 17:37:47.036144"], ["image", "kevin"], ["name", "Kevin Love"], ["position", "PF"], ["rank", 1], ["stats", "26.1 points, 12.5 rebounds, 4.4 assists, 0.8 steals, 0.5 blocks, 26.9 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:37:47.036144"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mTeam Load (1.6ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT "players".* FROM "players"  WHERE (team_id)[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."team_id" = 3[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."team_id" = 3
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."team_id" = 1
+  [1m[36mPlayer Load (0.7ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."team_id" = 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  "players".* FROM "players"  WHERE "players"."team_id" = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."team_id" = 3 LIMIT 1[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT  "players".* FROM "players"  WHERE "players"."team_id" = 3 LIMIT 1
+  [1m[36mTeam Load (0.5ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'
+  [1m[36m (54.8ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer, "age" integer, "name" varchar(255), "image" varchar(255), "rank" integer) [0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team_name" varchar(255), "city" varchar(255), "state" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171825')[0m
+  [1m[35m (3.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140808222534')
+  [1m[36m (3.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140808233250')[0m
+  [1m[35m (4.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140809145251')
+  [1m[36m (3.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171515')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:45:22.263509"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:45:22.263509"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[36m (56.1ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "stats" varchar(255), "created_at" datetime, "updated_at" datetime, "team_id" integer, "age" integer, "name" varchar(255), "image" varchar(255), "rank" integer) [0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team_name" varchar(255), "city" varchar(255), "state" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171825')[0m
+  [1m[35m (3.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140808222534')
+  [1m[36m (3.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140808233250')[0m
+  [1m[35m (4.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140809145251')
+  [1m[36m (3.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140809171515')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Milwaukee"], ["created_at", "2014-08-09 17:45:31.633334"], ["state", "WI"], ["team_name", "Milwaukee Bucks"], ["updated_at", "2014-08-09 17:45:31.633334"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 27], ["created_at", "2014-08-09 17:45:31.652107"], ["image", "ersan"], ["name", "Ersan Ilyasova"], ["position", "SF/PF"], ["rank", 10], ["stats", "11.2 points, 6.2 rebounds, 1.3 assists, 0.8 steals, 0.1 blocks, 13.8 PER"], ["team_id", 1], ["updated_at", "2014-08-09 17:45:31.652107"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "New Orleans"], ["created_at", "2014-08-09 17:45:31.656296"], ["state", "LA"], ["team_name", "New Orleans Pelicans"], ["updated_at", "2014-08-09 17:45:31.656296"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'New Orleans Pelicans'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 25], ["created_at", "2014-08-09 17:45:31.662585"], ["image", "eric"], ["name", "Eric Gordon"], ["position", "SG"], ["rank", 9], ["stats", "15.4 points, 2.6 rebounds, 3.3 assists, 1.2 steals, 0.2 blocks, 14.9 PER"], ["team_id", 2], ["updated_at", "2014-08-09 17:45:31.662585"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Indianapolis"], ["created_at", "2014-08-09 17:45:31.668621"], ["state", "IN"], ["team_name", "Indiana Pacers"], ["updated_at", "2014-08-09 17:45:31.668621"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers'[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 33], ["created_at", "2014-08-09 17:45:31.675154"], ["image", "david"], ["name", "David West"], ["position", "PF"], ["rank", 8], ["stats", "14.0 points, 6.8 rebounds, 2.8 assists, 0.8 steals, 0.9 blocks, 17.5 PER"], ["team_id", 3], ["updated_at", "2014-08-09 17:45:31.675154"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Philadelphia 76ers' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Philadelphia"], ["created_at", "2014-08-09 17:45:31.681263"], ["state", "PA"], ["team_name", "Philadelphia 76ers"], ["updated_at", "2014-08-09 17:45:31.681263"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Philadelphia 76ers'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 26], ["created_at", "2014-08-09 17:45:31.686807"], ["image", "thaddeus"], ["name", "Thaddeus Young"], ["position", "SF/PF"], ["rank", 7], ["stats", "17.9 points, 6.0 rebounds, 2.3 assists, 2.1 steals, 0.5 blocks, 16.6 PER"], ["team_id", 4], ["updated_at", "2014-08-09 17:45:31.686807"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Indiana Pacers'
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 27], ["created_at", "2014-08-09 17:45:31.697911"], ["image", "roy"], ["name", "Roy Hibbert"], ["position", "C"], ["rank", 6], ["stats", "10.8 points, 6.6 rebounds, 1.1 assists, 0.4 steals, 2.2 blocks, 13.5 PER"], ["team_id", 3], ["updated_at", "2014-08-09 17:45:31.697911"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTeam Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["city", "Detroit"], ["created_at", "2014-08-09 17:45:31.702055"], ["state", "MI"], ["team_name", "Detroit Pistons"], ["updated_at", "2014-08-09 17:45:31.702055"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons'
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 28], ["created_at", "2014-08-09 17:45:31.707490"], ["image", "josh"], ["name", "Josh Smith"], ["position", "PF"], ["rank", 5], ["stats", "16.4 points, 6.8 rebounds, 3.3 assists, 1.4 steals, 1.4 blocks, 14.1 PER"], ["team_id", 5], ["updated_at", "2014-08-09 17:45:31.707490"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Detroit Pistons'[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 24], ["created_at", "2014-08-09 17:45:31.713712"], ["image", "greg"], ["name", "Greg Monroe"], ["position", "PF/C"], ["rank", 4], ["stats", "15.2 points, 9.3 rebounds, 2.1 assists, 1.1 steals, 0.6 blocks, 18.1 PER"], ["team_id", 5], ["updated_at", "2014-08-09 17:45:31.713712"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Phoenix Suns' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Phoenix"], ["created_at", "2014-08-09 17:45:31.718080"], ["state", "AZ"], ["team_name", "Phoenix Suns"], ["updated_at", "2014-08-09 17:45:31.718080"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Phoenix Suns'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 24], ["created_at", "2014-08-09 17:45:31.723024"], ["image", "ericb"], ["name", "Eric Bledsoe"], ["position", "PG"], ["rank", 3], ["stats", "17.7 points, 4.7 rebounds, 5.5 assists, 1.6 steals, 0.3 blocks, 19.6 PER"], ["team_id", 6], ["updated_at", "2014-08-09 17:45:31.723024"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Boston Celtics' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Boston"], ["created_at", "2014-08-09 17:45:31.727702"], ["state", "MA"], ["team_name", "Boston Celtics"], ["updated_at", "2014-08-09 17:45:31.727702"]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Boston Celtics'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 28], ["created_at", "2014-08-09 17:45:31.734313"], ["image", "rajon"], ["name", "Rajon Rondo"], ["position", "PG"], ["rank", 2], ["stats", "11.7 points, 5.5 rebounds, 9.8 assists,  1.3 steals, 0.1 blocks, 15.3 PER"], ["team_id", 7], ["updated_at", "2014-08-09 17:45:31.734313"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.1ms)[0m  SELECT  1 AS one FROM "teams"  WHERE "teams"."team_name" = 'Minnesota Timberwolves (pre-trade!)' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "teams" ("city", "created_at", "state", "team_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["city", "Minneapolis"], ["created_at", "2014-08-09 17:45:31.739191"], ["state", "MN"], ["team_name", "Minnesota Timberwolves (pre-trade!)"], ["updated_at", "2014-08-09 17:45:31.739191"]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Minnesota Timberwolves (pre-trade!)'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("age", "created_at", "image", "name", "position", "rank", "stats", "team_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 25], ["created_at", "2014-08-09 17:45:31.745554"], ["image", "kevin"], ["name", "Kevin Love"], ["position", "PF"], ["rank", 1], ["stats", "26.1 points, 12.5 rebounds, 4.4 assists, 0.8 steals, 0.5 blocks, 26.9 PER"], ["team_id", 8], ["updated_at", "2014-08-09 17:45:31.745554"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."team_name" = 'Milwaukee Bucks'[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."team_id" = 3[0m

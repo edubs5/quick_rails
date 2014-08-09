@@ -7,11 +7,9 @@ line in the directory that you save these files to.
 Run:
 
 rake db:create
-
 rake db:migrate
-
+rake db:seed
 
 
 Then start server:
-
 rails s
