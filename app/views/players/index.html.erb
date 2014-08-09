@@ -20,16 +20,13 @@
     <input type="radio" name="direction" value="reverse">
     descending
   </label>
-
-
-
 </div>
 <ul class="playerlist">
     <% @players.each do |player| %>
   <li class="player cf" >
     <%= image_tag("#{player.image}.jpg", :alt => "Photo of #{player.name}") %>
     <div class="info">
-      <h2><%= "#{player.rank}, #{player.name}" %></h2>
+      <h2><%= "\##{player.rank}, #{player.name}" %></h2>
       <h3><%= player.team.team_name %></h3>
       <h3>Position: <%= player.position %></h3>
     </div>
