@@ -1,0 +1,13 @@
+<section class="playerinfo">
+  <div class="player cf">
+    <h1><%= @player.name %></h1>
+    <div class="info">
+      <h3><%= @team.team_name %> in <%= @team.city %>, <%= @team.state %></h3>
+      <%= image_tag("#{@player.image}.jpg", :alt => "Photo of #{@player.name}}") %>
+      <div class="position">Position: <%= @player.position %></div>
+      <div class="age">Age: <%= @player.age %></div>
+      <div class="stats">2013-14 Stats: <%= @player.stats %></div>
+    </div>
+  </div>
+  <%= link_to("<< Back", {:action => 'index'}) %>
+</section>
