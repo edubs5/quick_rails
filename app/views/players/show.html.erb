@@ -1,5 +1,8 @@
 <section class="playerinfo">
   <div class="player cf">
+    <%= link_to("<", {:action => 'show', :id => previous_page}, {:class => "btn btn-left"} ) %>
+    <%= link_to(">", {:action => 'show', :id => next_page}, {:class => "btn btn-right"} ) %>
+    <br>
     <h1><%= @player.name %></h1>
     <div class="info">
       <h3><%= @team.team_name %> in <%= @team.city %>, <%= @team.state %></h3>
